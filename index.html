@@ -1,0 +1,23 @@
+{{define "top"}}
+  <html lang="ja">
+    <head>
+      <!DOCTYPE html>
+    </head>
+    <body>
+      <div id="header">
+        <h1 id="page-title">{{ .ServiceInfo }}</h1>
+      </div>
+      <div id="home">
+        <div id="main">
+          <div id="main-top">
+            <h2 id="main-title">{{ .Content }}</h2>
+            <form method="post" action="example.cgi">
+              <p>検索内容：<input type="text" name="name"></p>
+              <p><input type="submit" value="検索する"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </body>
+  </html>
+{{ end  }}
